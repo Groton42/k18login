@@ -75,7 +75,7 @@ $('#signin-button').on('click', function() {
 				"incident_key": `failed_login_${email}`,
 				"routing_key": routing_key,
 				"payload": {
-						"summary": `Failed logins for ${email}`,
+						"summary": `Attempted malicious logins for username ${email}`,
 						"source": "Splunk",
 						"severity": "critical",
 						"custom_details": {
